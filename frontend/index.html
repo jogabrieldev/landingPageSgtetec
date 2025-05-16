@@ -31,92 +31,69 @@
   </head>
 
   <body>
-   <nav class="navbar navbar-expand-lg py-1" id="containerMain">
-  <div
-    class="container-fluid text-dark"
-    style="height: 70px; padding-top: 0.25rem; padding-bottom: 0.25rem"
-  >
-    <!-- LOGO -->
-    <div class="logo-container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img
-          src="img/logoMain.png"
-          alt="logosgttec"
-          class="rounded align-self-center logoImg"
-        />
-      </a>
-    </div>
+   <nav class="navbar navbar-expand-lg navbar-dark py-2 fixed-top" id="containerMain">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#home">
+      <img src="img/logoMain.png" alt="Logo SGTTEC" class="logoImg" />
+    </a>
 
-    <!-- BOTÃO HAMBURGUER -->
+    <!-- Botão Hamburguer -->
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- CONTEÚDO EXPANDIDO -->
-    <div class="collapse navbar-collapse flex-wrap justify-content-between" id="navbarNav">
-      <!-- MENU CENTRAL -->
-      <div class="w-100 d-flex justify-content-center">
-        <ul class="navbar-nav flex-row flex-wrap justify-content-center text-center">
-          <li class="nav-item border-end border-light pe-3 me-3">
-            <a class="nav-link text-white fw-bold fs-5 position-relative hover-underline" href="#home">
-              Home
-            </a>
-          </li>
-          <li class="nav-item border-end border-light pe-3 me-3">
-            <a class="nav-link text-white fw-bold fs-5 position-relative hover-underline" href="#sobre">
-              Sobre
-            </a>
-          </li>
-          <li class="nav-item border-end border-light pe-3 me-3">
-            <a class="nav-link text-white fw-bold fs-5 position-relative hover-underline" href="#servicos">
-              Serviços
-            </a>
-          </li>
-          <li class="nav-item border-end border-light pe-3 me-3">
-            <a class="nav-link text-white fw-bold fs-5 position-relative hover-underline" href="#cliente">
-              Clientes
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fw-bold fs-5 position-relative hover-underline" href="#contato">
-              Contato
-            </a>
-          </li>
-        </ul>
+    <!-- Conteúdo Expandido -->
+    <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarNav">
+      <ul class="navbar-nav flex-row flex-wrap justify-content-center mx-auto text-center gap-3 nav-links-custom">
+  <li class="nav-item">
+    <a class="nav-link nav-link-custom" href="#home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-custom" href="#sobre">Sobre</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-custom" href="#servicos">Serviços</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-custom" href="#cliente">Clientes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-custom" href="#contato">Contato</a>
+  </li>
+</ul>
+
+      <!-- Ícones Sociais -->
+      <div class="d-flex gap-2 justify-content-center mt-3 mt-lg-0">
+        <a
+          href="https://www.linkedin.com/company/sgttec/"
+          target="_blank"
+          class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+          style="width: 40px; height: 40px"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/sgttec?igsh=MXI0d2MydTRoczNmag=="
+          target="_blank"
+          class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+          style="width: 40px; height: 40px"
+        >
+          <i class="bi bi-instagram"></i>
+        </a>
       </div>
-
-      <!-- ÍCONES SOCIAIS -->
-      <ul class="navbar-nav ms-lg-auto d-flex flex-row justify-content-center gap-2 mt-3 mt-lg-0">
-        <li class="nav-item">
-          <a
-            class="nav-link bg-primary text-white d-flex align-items-center justify-content-center rounded-circle"
-            href="https://www.linkedin.com/company/sgttec/"
-            target="_blank"
-            style="width: 40px; height: 40px;"
-          >
-            <i class="bi bi-linkedin"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link bg-danger text-white d-flex align-items-center justify-content-center rounded-circle"
-            href="https://www.instagram.com/sgttec?igsh=MXI0d2MydTRoczNmag=="
-            target="_blank"
-            style="width: 40px; height: 40px;"
-          >
-            <i class="bi bi-instagram"></i>
-          </a>
-        </li>
-      </ul>
-    </div> <!-- fechamento correto da collapse -->
-
-  </div> <!-- fechamento da container-fluid -->
+    </div>
+  </div>
 </nav>
+
 
 
     <!--  Hero Section -->
@@ -134,13 +111,13 @@
     </section>
      <br>
     <!-- Seção Sobre -->
-    <section id="sobre" class="section py-5 bg-light">
+    <section id="sobre" class="section py-5 ">
       <div class="container text-center">
         <h2 class="mb-5">Sobre a SGTTEC</h2>
         <div class="row g-4">
           <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-              <div class="card-body">
+              <div class="card-body" id="sobretext">
                 <h3 class="card-title">
                   Quem Somos
                   <i class="bi bi-people-fill me-2 text-primary"></i>
@@ -163,7 +140,7 @@
           <!-- Card Visão -->
           <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-              <div class="card-body text-justify">
+              <div class="card-body text-justify" id="visionText">
                 <h3 class="card-title">
                   <i class="bi bi-bullseye me-2 text-success"></i>
                   Nossa Visão
@@ -184,16 +161,16 @@
     </section>
     <br>
     <!--  Seção Serviços -->
-    <section id="servicos" class="section py-5 bg-light">
+    <section id="servicos" class="section py-5 ">
       <div class="container text-center">
         <h2 class="mb-5">Nossos Serviços</h2>
         <div class="row g-4">
           <!-- Serviço 1: Alinha -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm">
-              <div class="card-body">
+              <div class="card-body" id="containerAlinha">
                 <img
-                  src="img/logoalinha.jpg"
+                  src="img/logoalinha-removebg-preview.png"
                   alt="logo Alinha"
                   class="img-fluid mb-3"
                 />
@@ -248,9 +225,9 @@
           <!-- Serviço 2: Eopera -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm">
-              <div class="card-body">
+              <div class="card-body" id="containerEopera">
                 <img
-                  src="img/logoeopera.jpg"
+                  src="img/logoeopera-removebg-preview.png"
                   alt="logo Eopera"
                   class="img-fluid mb-3"
                 />
@@ -305,9 +282,9 @@
           <!-- Serviço 3: Totvs -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm">
-              <div class="card-body">
+              <div class="card-body" id="containerTotvs">
                 <img
-                  src="img/totvs2.jpg"
+                  src="img/totvs2-removebg-preview.png"
                   alt="logo Totvs"
                   class="img-fluid mb-3"
                 />
@@ -374,7 +351,7 @@
                 alt="Cliente 1"
                 style="max-height: 100px"
               />
-              <p class="mt-2">Limpa Gyn</p>
+              <p class="mt-2 text-white">Limpa Gyn</p>
             </div>
 
             <div class="carousel-item">
@@ -384,7 +361,7 @@
                 alt="Cliente 2"
                 style="max-height: 100px"
               />
-              <p class="mt-2">Quebec Ambiental</p>
+              <p class="mt-2 text-white">Quebec Ambiental</p>
             </div>
 
             <div class="carousel-item">
@@ -394,7 +371,7 @@
                 alt="Cliente 3"
                 style="max-height: 100px"
               />
-              <p class="mt-2">Caiapó Construtora</p>
+              <p class="mt-2 text-white">Caiapó Construtora</p>
             </div>
 
             <div class="carousel-item">
@@ -404,7 +381,7 @@
                 alt="Cliente 3"
                 style="max-height: 100px"
               />
-              <p class="mt-2">Pousada antlãntica recanto do mar</p>
+              <p class="mt-2 text-white">Pousada antlãntica recanto do mar</p>
             </div>
 
             <div class="carousel-item">
@@ -414,7 +391,7 @@
                 alt="Cliente 3"
                 style="max-height: 100px"
               />
-              <p class="mt-2">center Mais</p>
+              <p class="mt-2 text-white">center Mais</p>
             </div>
           </div>
 
@@ -439,9 +416,9 @@
     </section>
 
     
-    <section id="contato" class="section bg-light py-5">
+    <section id="contato" class="section  py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Entre em Contato</h2>
+        <h2 class="text-center mb-4 ">Entre em Contato</h2>
         <div class="row">
           <div class="col-lg-6 mb-4">
             <form class="row g-3" id="contact-form">
@@ -484,7 +461,7 @@
                 ></textarea>
               </div>
               <div class="col-12 text-start">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-outline-success">
                   Enviar Mensagem
                 </button>
               </div>
@@ -497,8 +474,8 @@
 
         
           <div class="col-lg-6">
-            <h5 class="fw-bold">Nosso Endereço</h5>
-            <p>
+            <h5 class="fw-bold text-white">Nosso Endereço</h5>
+            <p class="text-white">
               Segunda Avenida<br />
               Condomínio Cidade Empresarial<br />
               Aparecida de Goiânia<br />
@@ -525,7 +502,6 @@
       
     </section>
 
-   
     <footer>
       <h5>SGTTEC TECNOLOGIA</h5>
       <p><strong>CNPJ:</strong> 40.423.009/0001-20</p>

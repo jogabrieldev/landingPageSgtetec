@@ -1,15 +1,33 @@
 
 body{
-    background-color: #dbe5ec  ;
+   background: linear-gradient(135deg, #0B1D37, #03101e 30%, #0B1D37 70%);
+   /* background-color: white; */
+  color: #ffffff;
 }
 
-h2{
+/* h2{
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  font-size: 68px;
+  font-size: 50px;
+} */
+ h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700; /* peso ideal para títulos */
+  font-style: normal;
+  font-size: 2.8rem; /* responsivo */
+  color: #C6F600; /* cor da logo (verde-limão) */
+  letter-spacing: 1px;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
 }
+
+/* Linha decorativa abaixo do título */
+
+
 
 h1{
     font-family: "Playfair Display", serif;
@@ -21,18 +39,72 @@ a{
   font-size: 50px;
 }
 
+#informativo:hover{
+   background-color:rgb(11, 29, 55) ;
+   color: white;
+}
 /* Estilo padrão (desktop) */
 .navbar-brand img {
   height: 42px;
   width: auto;
 }
+
 .navbar {
-  
- position: relative; /* ou 'static' */
+  position: relative; /* ou 'static' */
   width: 100%;
   z-index: 10;
-  background-color: rgb(11, 29, 55); /* caso ainda esteja transparente */
+  background-color: rgb(11, 29, 55);
 
+}
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ... %3C/svg%3E");
+  filter: invert(1);
+}
+
+/* Estilo base */
+/* Estilo refinado para o fundo escuro */
+.nav-link-custom {
+  color: #f0f0f0 !important; /* branco suave */
+  font-weight: 600;
+  position: relative;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Linha animada azul-claro */
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 70%;
+  height: 2px;
+  background-color: #C6F600 ;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover */
+.nav-link-custom:hover {
+  color:#C6F600 !important;
+}
+
+.nav-link-custom:hover::after {
+  transform: scaleX(1);
+}
+
+/* Separadores modernos com transparência */
+.nav-links-custom .nav-item:not(:last-child)::after {
+  color: #C6F600;
+  margin: 0 8px;
+  font-weight: 300;
 }
 
 .logo-container {
@@ -66,19 +138,13 @@ a{
   width: 100%;
 }
 
-
-/* Tela média (tablets, entre 768px e 991px) */
-/* Força o menu colapsado a empurrar a hero-section para baixo */
-
-
 .hero-section {
- background-image: url("img/Imagem do WhatsApp de 2025-04-17 à(s) 11.16.41_fcd7a7d5.jpg");
+ background-image: url("img/pexels-timmossholder-974314.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   min-height: 400px; 
-  
   display: flex;
   align-items: center;     
   justify-content: center; 
@@ -100,7 +166,6 @@ position: relative;
 }
 #containerMain{
     background-color:rgb(11, 29, 55);
-  
     min-height: 80px; 
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -119,19 +184,31 @@ position: relative;
 
 /* SOBRE */
 #sobre {
-background-color: white;
+ background-color:rgb(11, 29, 55) ;
 width: 88%;
 margin: 0 auto;                  /* Centraliza horizontalmente */
-padding: 60px 20px;              /* Espaçamento interno */
-min-height: 100vh;               /* Ocupa altura total da tela */
+padding: 50px 10px;              /* Espaçamento interno */
+min-height: 90vh;               /* Ocupa altura total da tela */
 display: flex;
 align-items: center;            /* Centraliza verticalmente */
 justify-content: center;        /* Centraliza horizontalmente o conteúdo interno */
 text-align: center;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
 border-radius: 12px;
 padding-top: 0;
 margin-top: 0;
+color: white;
+border: 1px solid #E6F1FF ;
+}
+
+#sobretext{
+  background-color: #0B1D37;
+  color: white;
+}
+
+#visionText{
+  background-color: #0B1D37;
+  color: white;
 }
 
 .textSobreNois{
@@ -144,7 +221,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 /* 1 services */
 #servicos {
-background-color: white;
+background-color:rgb(11, 29, 55);
 width: 88%;
 margin: 0 auto;
 padding: 60px 20px;
@@ -153,9 +230,15 @@ align-items: center;            /* Centraliza verticalmente */
 justify-content: center;        /* Centraliza horizontalmente o conteúdo interno */
 text-align: center;
 border-radius: 12px;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+color: white;
+border: 1px solid #E6F1FF
 }
 
+#containerAlinha{
+  background-color: #0B1D37;
+  color: white;
+}
 
 #logoAlinha{
     width: 40%;
@@ -204,6 +287,11 @@ box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 
 /* EOPERA */
 
+#containerEopera{
+   background-color: #0B1D37;
+  color: white;
+}
+
 .sobreEopera{
     position: fixed;
     top: 0;
@@ -240,6 +328,11 @@ box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 
 /* totvs */
 
+#containerTotvs{
+  background-color: #0B1D37;
+  color: white;
+}
+
 .sobreTotvs{
     position: fixed;
     top: 0;
@@ -275,9 +368,14 @@ box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     cursor: pointer;
 }
 
+#contato{
+  border: 1px solid white;
+}
+
 
 footer {
-  background-color: #dbe5ec  ;
+  background-color:rgb(11, 29, 55) ;
   text-align: center;
+  color: #C6F600;
   padding: 15px;
 }
