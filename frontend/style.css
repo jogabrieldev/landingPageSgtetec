@@ -1,0 +1,283 @@
+
+body{
+    background-color: #dbe5ec  ;
+}
+
+h2{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 68px;
+}
+
+h1{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+a{
+  font-size: 50px;
+}
+
+/* Estilo padrão (desktop) */
+.navbar-brand img {
+  height: 42px;
+  width: auto;
+}
+.navbar {
+  
+ position: relative; /* ou 'static' */
+  width: 100%;
+  z-index: 10;
+  background-color: rgb(11, 29, 55); /* caso ainda esteja transparente */
+
+}
+
+.logo-container {
+  height: 70px;       
+  width: 100px;        
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logoImg {
+  height: 100%;       
+  width: auto;        
+  object-fit: contain;
+  display: block;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+
+/* Tela média (tablets, entre 768px e 991px) */
+/* Força o menu colapsado a empurrar a hero-section para baixo */
+
+
+.hero-section {
+ background-image: url("img/Imagem do WhatsApp de 2025-04-17 à(s) 11.16.41_fcd7a7d5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 400px; 
+  
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  text-align: center; 
+}
+
+
+.hero-section .content {
+z-index: 1;
+position: relative;
+
+}
+.text-justify {
+  text-align: justify;
+}
+
+.section {
+  padding:80px 20px;
+}
+#containerMain{
+    background-color:rgb(11, 29, 55);
+  
+    min-height: 80px; 
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+#containerMain .navbar-brand img {
+  height: 100px; 
+  width: auto;  
+}
+
+#photo{
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+}
+
+/* SOBRE */
+#sobre {
+background-color: white;
+width: 88%;
+margin: 0 auto;                  /* Centraliza horizontalmente */
+padding: 60px 20px;              /* Espaçamento interno */
+min-height: 100vh;               /* Ocupa altura total da tela */
+display: flex;
+align-items: center;            /* Centraliza verticalmente */
+justify-content: center;        /* Centraliza horizontalmente o conteúdo interno */
+text-align: center;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+border-radius: 12px;
+padding-top: 0;
+margin-top: 0;
+}
+
+.textSobreNois{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.containerVision{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 1 services */
+#servicos {
+background-color: white;
+width: 88%;
+margin: 0 auto;
+padding: 60px 20px;
+display: flex;
+align-items: center;            /* Centraliza verticalmente */
+justify-content: center;        /* Centraliza horizontalmente o conteúdo interno */
+text-align: center;
+border-radius: 12px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+
+#logoAlinha{
+    width: 40%;
+}
+.sobreAlinha {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050; /* Acima do conteúdo */
+  padding: 1rem;
+}
+
+#alinha,
+#segundaImgAlinha {
+  width: 80%;
+  height: auto;
+  max-height:420px; /* reduzido para caber as duas imagens */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sobreContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 900px; /* Mas mantém limite para telas grandes */
+  max-height: 100vh; /* evita estourar a tela */
+  position: relative;
+  height: auto;
+  overflow: auto;
+}
+.closeBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* EOPERA */
+
+.sobreEopera{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050; /* Acima do conteúdo */
+    padding: 1rem;
+}
+
+#logoEopera{
+ width: 80%;
+}
+#Eopera1 ,
+#Eopera{
+    width: 85%;
+  height: auto;
+  max-height: 400px; /* reduzido para caber as duas imagens */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.closeBtnEopera{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* totvs */
+
+.sobreTotvs{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050; /* Acima do conteúdo */
+    padding: 1rem;
+}
+
+#totvs2{
+    width: 253px;
+}
+#totvs1 {
+    width: 85%;
+    height: auto;
+    max-height: 350px; /* reduzido para caber as duas imagens */
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.closeBtnTotvs{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+footer {
+  background-color: #dbe5ec  ;
+  text-align: center;
+  padding: 15px;
+}
